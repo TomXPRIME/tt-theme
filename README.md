@@ -1,6 +1,6 @@
 # Tt Theme (`Tt Light` & `Tt Dark`) for Windows Terminal
 
-Day/night twin color schemes for Windows Terminal inspired by the **Cindy Design System** ([makecindy/cindy](https://github.com/makecindy/cindy), `DESIGN.md §15.16`) — warm ivory paper (`#F2F2ED`, `B = R−5`) by day, pure neutral near-black (`#181818`, `R = G = B`) by night, Apple-style translucent-ink contrast tiers, Focus Blue (`#417CDD`) cursor anchor, crisp zero-brown Thinking Orange (`#EA6B17` / `#FF9436`) warm accents, and WCAG 2.1 + APCA dual-metric calibration.
+Day/night twin color schemes for Windows Terminal inspired by the **Cindy Design System** ([makecindy/cindy](https://github.com/makecindy/cindy), `DESIGN.md §15.16`) — warm ivory paper (`#F2F2ED`, `B = R−5`) by day, pure neutral near-black (`#181818`, `R = G = B`) by night, Apple-style translucent-ink contrast tiers, Focus Blue (`#417CDD`) cursor anchor, Cindy native gold (`#D99A06` / `#F3A115` / `#E8B425`) yellow accents, and WCAG 2.1 + APCA dual-metric calibration.
 
 ## Quick Install (One-Liner)
 
@@ -50,7 +50,7 @@ irm https://raw.githubusercontent.com/TomXPRIME/tt-theme/main/install.ps1 | iex
 | **Primary Ink (`foreground`)** | `#1D1D1C` (`rgba(0,0,0,0.88)` on ivory · `15.02:1` / APCA `95.9`) | `#D6D6D6` (`rgba(255,255,255,0.82)` on `#181818` · `12.22:1` / APCA `80.6`) |
 | **Focus Anchor (`cursorColor`)** | `#417CDD` (Cindy Focus / Caret Blue) | `#417CDD` (Cindy Focus / Caret Blue) |
 | **Selection (`selectionBackground`)** | `#DCE6F5` (Cindy soft blue tint) | `#263449` (Cindy dark blue tint) |
-| **Zero-Brown Warm Accent** | Crisp tangerine orange (`#E05D0B` / `#EA6B17` Cindy Thinking Orange) | Luminous bright orange (`#FF9436` / `#FFB866`, zero muddy ochre/khaki) |
+| **Native Gold Accent** | Cindy `--favorite-star` (`#D99A06`) & `--warning-fg` (`#F3A115`), clear of red and brown | Cindy `--favorite-star` Dark (`#E8B425`) & bright gold (`#FFD15C`) |
 | **Invisibility Fix** | Solid ink-ladder neutral slots fix `\x1b[37m` (`#494947`) & `\x1b[97m` (`#2E2E2C`) white-on-white | Lifted neutral `black` (`#747474`, `30m`) & `brightBlack` (`#979797`, `90m`) fix black-on-black |
 
 ---
@@ -71,7 +71,7 @@ irm https://raw.githubusercontent.com/TomXPRIME/tt-theme/main/install.ps1 | iex
 | `brightBlack` | `#6A6A68` | Cindy `--text-secondary` 56% ink (`90m`) | `4.83:1` | `69.1` |
 | `red` / `brightRed` | `#C41E3A` / `#D91F37` | Calibrated crimson / Cindy `--card-status-error` | `5.20` / `4.45` | `69.4` / `64.6` |
 | `green` / `brightGreen` | `#177C3C` / `#218746` | Cindy `--status-success` / bright emerald | `4.69` / `4.05` | `67.8` / `63.2` |
-| `yellow` / `brightYellow` | `#E05D0B` / `#EA6B17` | Crisp tangerine / Cindy Thinking Orange (zero brown) | `3.26` / `2.83` | `55.3` / `50.2` |
+| `yellow` / `brightYellow` | `#D99A06` / `#F3A115` | Cindy `--favorite-star` Light / `--warning-fg` | `2.18` / `1.89` | `39.9` / `33.2` |
 | `blue` / `brightBlue` | `#1D4ED8` / `#2D64C8` | Cindy `--msg-link` (`--info-700`) / cobalt blue | `5.97` / `4.96` | `74.2` / `69.4` |
 | `purple` / `brightPurple` | `#7346AD` / `#8756C4` | Calibrated Cindy community purple (`#8050BB` family) | `5.83` / `4.50` | `74.1` / `66.6` |
 | `cyan` / `brightCyan` | `#0B726B` / `#0D827A` | Cindy `--sidebar-draft-indicator` / deep teal | `5.15` / `4.16` | `70.5` / `64.0` |
@@ -90,7 +90,7 @@ irm https://raw.githubusercontent.com/TomXPRIME/tt-theme/main/install.ps1 | iex
 | `brightWhite` | `#F2F2ED` | `Tt Light` warm ivory paper white (`97m`) | `15.81:1` | `98.0` |
 | `red` / `brightRed` | `#F06E78` / `#FF8E96` | Soft coral crimson / bright rose red | `6.09` / `8.08` | `45.8` / `58.2` |
 | `green` / `brightGreen` | `#4EC978` / `#74DF99` | Lifted Cindy `--status-success` / bright mint green | `8.41` / `10.79` | `60.1` / `73.4` |
-| `yellow` / `brightYellow` | `#FF9436` / `#FFB866` | Luminous tangerine orange / warm apricot (zero brown) | `8.07` / `10.40` | `58.2` / `71.2` |
+| `yellow` / `brightYellow` | `#E8B425` / `#FFD15C` | Cindy `--favorite-star` Dark / bright luminous gold | `9.29` / `12.28` | `65.1` / `81.1` |
 | `blue` / `brightBlue` | `#74A9FA` / `#93C5FD` | Calibrated sky blue / Cindy Dark `--msg-link` | `7.44` / `9.85` | `54.0` / `68.1` |
 | `purple` / `brightPurple` | `#BE9BF0` / `#D4B8FF` | Cindy community lavender (`#C4A1EF`) / bright lilac | `7.73` / `10.23` | `55.7` / `70.2` |
 | `cyan` / `brightCyan` | `#45CFC2` / `#6FE4D8` | Calibrated Cindy awaiting teal (`#19D2C1`) / bright aqua | `9.26` / `11.64` | `65.1` / `77.9` |
