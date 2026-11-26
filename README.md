@@ -4,41 +4,11 @@ Day/night twin color schemes for Windows Terminal inspired by the **Cindy Design
 
 ## Quick Install (One-Liner)
 
-Works out-of-the-box on a fresh Windows Terminal setup (PowerShell 5.1 & PowerShell 7+). Automatically detects Store, Preview, and Unpackaged `settings.json`, strips JSONC comments safely, creates a timestamped `.bak` backup, installs both `Tt Light` and `Tt Dark`, and enables `"adjustIndistinguishableColors": "indexed"`.
-
-**1. Auto Day/Night Switching (Recommended — follows Windows light/dark mode):**
+Automatically detects Windows Terminal `settings.json` (Store, Preview, or Unpackaged), adds both `Tt Light` and `Tt Dark` to `"schemes"`, and enables automatic light/dark switching following Windows theme (`"theme": "system"`):
 
 ```powershell
 irm https://raw.githubusercontent.com/TomXPRIME/tt-theme/main/install.ps1 | iex
 ```
-
-**2. Always Dark (`Tt Dark`):**
-
-```powershell
-& ([scriptblock]::Create((irm https://raw.githubusercontent.com/TomXPRIME/tt-theme/main/install.ps1))) -Mode dark
-```
-
-**3. Always Light (`Tt Light`):**
-
-```powershell
-& ([scriptblock]::Create((irm https://raw.githubusercontent.com/TomXPRIME/tt-theme/main/install.ps1))) -Mode light
-```
-
-**4. Interactive Choice Menu (`auto` / `light` / `dark`):**
-
-```powershell
-& ([scriptblock]::Create((irm https://raw.githubusercontent.com/TomXPRIME/tt-theme/main/install.ps1))) -Mode ask
-```
-
-### Installer Flags
-
-| Flag / Option | Description |
-|---|---|
-| `-Mode auto\|light\|dark\|ask` | Choose automatic OS switching (default), fixed light, fixed dark, or interactive prompt (also supports `$env:TT_THEME_MODE`) |
-| `-KeepWindowTheme` | Leave top-level `"theme"` untouched instead of setting `"system"` / `"light"` / `"dark"` |
-| `-OverrideProfiles` | Remove per-profile `"colorScheme"` overrides in `profiles.list` so all shells inherit the global Tt Theme |
-| `-NoBackup` | Skip creating `settings.json.bak.YYYYMMDD-HHMMSS` |
-| `-SettingsPath <path>` | Target a specific `settings.json` path explicitly |
 
 ---
 
@@ -108,7 +78,6 @@ irm https://raw.githubusercontent.com/TomXPRIME/tt-theme/main/install.ps1 | iex
   "theme": "system",
   "profiles": {
     "defaults": {
-      "adjustIndistinguishableColors": "indexed",
       "colorScheme": {
         "dark": "Tt Dark",
         "light": "Tt Light"
